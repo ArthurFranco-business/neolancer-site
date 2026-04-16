@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se</title>
+    <link rel="shortcut icon" href="imagens/apple-touch-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="pagina_de_cadastro.css">
+</head>
+
+<body>
+    <header>
+        <img src="imagens/logonv.png" alt="NeoLancer Logo" class="logo" />
+        <nav>
+            <a href="#" class="cinza">Contato ↷</a>
+            <a class="btn-entrar abrir-login">Português (Brasil)</a>
+        </nav>
+    </header>
+
+    <div class="ramo-container">
+        <h2 class="titulo-categorias">Área de atuação:</h2>
+
+        <div class="grid-categorias">
+
+            <div class="categoria-item">
+                <img src="imagens/tieprogramacao.png" alt="TI & Programação">
+                <span>TI & Programação</span>
+            </div>
+
+            <div class="categoria-item">
+                <img src="imagens/designemultimidia.png" alt="">
+                <span>Design & Multimídia</span>
+            </div>
+
+            <div class="categoria-item">
+                <img src="imagens/redacaoetraducao.png" alt="">
+                <span>Redação & Tradução</span>
+            </div>
+
+            <div class="categoria-item">
+                <img src="imagens/administracaoecontabilidade.png" alt="">
+                <span>Administração & Contabilidade</span>
+            </div>
+
+            <div class="categoria-item">
+                <img src="imagens/engenhariaearquitetura.png" alt="">
+                <span>Engenharia & Arquitetura</span>
+            </div>
+
+            <div class="categoria-item">
+                <img src="imagens/marketingevendas.png" alt="">
+                <span>Marketing & Vendas</span>
+            </div>
+
+            <div class="categoria-item">
+                <img src="imagens/servicosdeia.png" alt="">
+                <span>Serviços de IA</span>
+            </div>
+
+            <div class="categoria-item">
+                <img src="imagens/webesoftware.png" alt="">
+                <span>Web & Software</span>
+            </div>
+
+        </div>
+        <div class="navegacao">
+            <a href="cadastro2.html"><button>←</button></a>
+            <a href="cadastro4.html"><button class="proximo">Próximo</button></a>
+        </div>
+        <div class="progresso">
+            <div class="step ativo"></div>
+            <div class="step ativo"></div>
+            <div class="step"></div>
+            <div class="step ativo"></div>
+            <div class="navegacao">
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        const categorias = document.querySelectorAll(".categoria-item");
+
+        categorias.forEach(item => {
+            item.addEventListener("click", () => {
+
+                // remover seleção de todas
+                categorias.forEach(i => i.classList.remove("selecionada"));
+
+                // adicionar seleção à clicada
+                item.classList.add("selecionada");
+
+                // opcional: guardar o texto da categoria
+                console.log("Selecionado:", item.innerText);
+            });
+        });
+    </script>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <img src="imagens/logonv.png" alt="NeoLancer" class="footer-logo" />
+            <p>© 2025 - 2027 | <strong>NeoLancer</strong> - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

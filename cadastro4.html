@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se</title>
+    <link rel="shortcut icon" href="imagens/apple-touch-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="pagina_de_cadastro.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="imagens/logonv.png" alt="NeoLancer Logo" class="logo" />
+        <nav>
+            <a href="#" class="cinza">Contato ↷</a>
+            <a class="btn-entrar abrir-login">Português (Brasil)</a>
+        </nav>
+    </header>
+    <div class="perfil-wrapper">
+
+        <h2 class="titulo-perfil">Complete seu perfil:</h2>
+
+        <div class="perfil-card">
+
+            <!-- FOTO DE PERFIL -->
+            <div class="foto-perfil">
+                <div class="foto-circulo">
+                    <!-- Ícone da câmera aqui -->
+                    <div class="icone-add">+</div>
+                    <p>Selecione um<br>arquivo no formato:<br><strong>JPG / GIF / PNG</strong></p>
+                </div>
+                <input type="file" id="inputFoto" accept="image/*">
+            </div>
+
+            <!-- FORMULÁRIO À DIREITA -->
+            <div class="perfil-form">
+
+                <!-- Linha Gênero + Preço -->
+                <div class="linha-dupla">
+                    <div class="campo">
+                        <label>Gênero:</label>
+                        <select>
+                            <option>Selecione</option>
+                            <option>Masculino</option>
+                            <option>Feminino</option>
+                            <option>Outro</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label>Preço por hora:</label>
+                        <div class="preco-input">
+                            <span>R$</span>
+                            <input type="number" placeholder="0,00">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sobre mim -->
+                <div class="campo">
+                    <label>Sobre mim:</label>
+                    <textarea rows="5" placeholder=""></textarea>
+                </div>
+
+                <!-- Portfólio -->
+                <div class="linha-dupla">
+                    <div class="campo">
+                        <label>Portfólio:</label>
+                        <div class="portfolio-box">
+                            <span class="mais-portfolio">+</span>
+                        </div>
+                    </div>
+
+                    <p class="texto-lateral">
+                        Adicione algumas fotos ou documentos acompanhados
+                        de uma descrição detalhada do projeto, a fim de proporcionar
+                        credibilidade àqueles que considerarem contratá-lo.
+                    </p>
+                </div>
+
+                <!-- Checkbox -->
+                <label class="checkbox-politica">
+                    <input type="checkbox">
+                    Eu li e concordo com as <a href="#"><strong>Políticas da NeoLancer</strong></a>
+                </label>
+
+                <div class="navegacao">
+                    <a href="cadastro3.html"><button>←</button></a>
+                    <a href="pgn-principal.html"><button class="proximo">Finalizar perfil</button></a>
+                </div>
+                <div class="progresso">
+                    <div class="step ativo"></div>
+                    <div class="step ativo"></div>
+                    <div class="step ativo"></div>
+                    <div class="step"></div>
+                    <div class="navegacao">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-bottom">
+            <img src="imagens/logonv.png" alt="NeoLancer" class="footer-logo" />
+            <p>© 2025 - 2027 | <strong>NeoLancer</strong> - Todos os direitos reservados</p>
+        </div>
+    </footer>
+</body>
+
+</html>

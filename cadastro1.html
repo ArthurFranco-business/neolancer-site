@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se</title>
+    <link rel="shortcut icon" href="imagens/apple-touch-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="pagina_de_cadastro.css">
+</head>
+
+<body>
+    <header>
+        <img src="imagens/logonv.png" alt="NeoLancer Logo" class="logo" />
+        <nav>
+
+            <a href="#" class="cinza">Contato ↷</a>
+            <a class="btn-entrar abrir-login">Português (Brasil)</a>
+
+        </nav>
+    </header>
+
+    <div class="cadastro-container">
+        <h2>Como você veio parar aqui?</h2>
+
+        <div class="opcao">
+            <div>
+                <h3>Eu quero trabalhar</h3>
+                <p>Descubra projetos incríveis, mergulhe nas oportunidades e comece a trabalhar imediatamente.</p>
+            </div>
+            <span class="icon">➔</span>
+        </div>
+
+        <div class="opcao">
+            <div>
+                <h3>Eu quero contratar</h3>
+                <p>Uma infinidade de freelancers capacitados está disponível para começar de imediato.</p>
+            </div>
+            <span class="icon">➔</span>
+        </div>
+
+        <div class="navegacao">
+            <a href="pgn-inicial.html"><button>←</button></a>
+            <a href="cadastro2.html"><button class="proximo">Próximo</button></a>
+        </div>
+
+        <div class="progresso">
+            <div class="step"></div>
+            <div class="step ativo"></div>
+            <div class="step ativo"></div>
+            <div class="step ativo"></div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <img src="imagens/logonv.png" alt="NeoLancer" class="footer-logo" />
+            <p>© 2025 - 2027 | <strong>NeoLancer</strong> - Todos os direitos reservados</p>
+        </div>
+    </footer>
+    <script>
+        const opcoes = document.querySelectorAll('.opcao');
+
+        opcoes.forEach(opcao => {
+            opcao.addEventListener('click', () => {
+                opcoes.forEach(o => o.classList.remove('selecionada'));
+                opcao.classList.add('selecionada');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
